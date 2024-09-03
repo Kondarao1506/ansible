@@ -1,0 +1,14 @@
+- name: variables from files
+  hosts: web
+  vars_files:
+    varsfile.yaml
+  become: yes
+  tasks:
+    - name: "variables from files reading"
+      ansible.builtin.debug:
+        msg: "{{COURSES}} {{DURATION} {{TRAINER}}}"
+
+    - name: "anther task level variables"
+      vars:
+        COURSES: JAVA
+          msg: "{{COURSES}} {{DURATION} {{TRAINER}}}"
