@@ -9,6 +9,7 @@
         msg: "{{COURSES}} {{DURATION} {{TRAINER}}}"
 
     - name: "anther task level variables"
+      ansible.builtin.debug:
       vars:
         COURSES: JAVA
           msg: "{{COURSES}} {{DURATION} {{TRAINER}}}"
