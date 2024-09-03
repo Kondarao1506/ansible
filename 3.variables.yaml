@@ -1,7 +1,7 @@
 - name: variables declarations
   hosts: web
   become: yes
-  var:
+  vars:
     COURCES: "DEVOPS WITH ATWS"
     DURATION: 120
     TRAINER: PAVAN
