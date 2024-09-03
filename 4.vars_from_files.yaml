@@ -12,4 +12,4 @@
       vars:
         COURSES: JAVA
       ansible.builtin.debug:
-        msg: "{{COURSES}} {{DURATION} {{TRAINER}}}"
+        msg: "{{COURSES}} {{DURATION}} {{TRAINER}}"
