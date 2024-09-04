@@ -15,6 +15,11 @@
     ansible.builtin.command: useradd expence
     register: USER
     when: USER.rc != 0
+
+  - name: user is exit or not
+    ansible.builtin.debug:
+      msg: "userid is {{USER}}"
+
     
     
      
