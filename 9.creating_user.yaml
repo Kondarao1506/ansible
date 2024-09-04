@@ -15,7 +15,6 @@
     ansible.builtin.command: useradd expence
     register: USER
     when: rc != 0
-    ansible.builtin.debug:
-      msg: "USER IS {{USER}}"
+    
     
      
