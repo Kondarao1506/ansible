@@ -4,4 +4,4 @@
   tasks:
   - name: variable passing by args
     ansible.builtin.debug:
-      msg: "hi {{NAME}} welcome to {{COMPANY}}""
+      msg: "hi {{NAME}} welcome to {{COMPANY}}"
