@@ -1,6 +1,7 @@
 - name: passing variables by prompt
   hosts: web
   become: yes
+  private: false
   vars_prompt:
   - name: NAME
     prompt: "ENTER YOUR NAME"
