@@ -8,9 +8,9 @@
     - name: less number is
       ansible.builtin.debug:
         msg: "less number is {{num}}"
-      when: num < 10
+      when: num | int < 10
 
     - name: greater number is
       ansible.builtin.debug:
         msg: "less number is {{num}}"
-      when: num > 10
+      when: num | int > 10
