@@ -1,0 +1,15 @@
+- name: check whether the given number is small or big
+  hosts: local
+  vars_prompt:
+    - name: num
+      prompt: "Enter the number"
+  tasks:
+    - name: less number is
+      ansible.builtin.debug:
+        msg: "less number is {{num}}"
+      when: num < 10
+
+    - name: greater number is
+      ansible.builtin.debug:
+        msg: "less number is {{num}}"
+      when: num > 10
