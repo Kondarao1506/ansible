@@ -13,8 +13,7 @@
 
   - name: user add
     ansible.builtin.command: useradd expence
-    register: expence
-    when: expence.rc != 0
+    when: USER.rc != 0
 
   - name: user is exit or not
     ansible.builtin.debug:
