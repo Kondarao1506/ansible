@@ -9,3 +9,7 @@
     loop:
     - nginx
     - mysql
+  - name: "starting service"
+    ansible.builtin.service:
+      name: nginx
+      state: started
