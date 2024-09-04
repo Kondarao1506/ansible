@@ -12,5 +12,5 @@
 
     - name: greater number is
       ansible.builtin.debug:
-        msg: "less number is {{num}}"
+        msg: "greater number is {{num}}"
       when: num | int > 10
