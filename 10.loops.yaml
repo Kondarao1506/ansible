@@ -1,0 +1,11 @@
+- name: loops example
+  hosts: web
+  become: yes
+  tasks:
+  - name: installing packages using loops
+    ansible.builtin.packages:
+      name: "{{item}}"
+      state: present
+    loop:
+    -nginx
+    -mysql
