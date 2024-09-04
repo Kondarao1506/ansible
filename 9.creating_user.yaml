@@ -7,7 +7,14 @@
     register: USER
     ignore_errors: true
 
-  - name: user is
+  - name: user is exit or not
     ansible.builtin.debug:
       msg: "userid is {{USER}}"
+
+  - name: user add
+    ansible.builtin.command: useradd expence
+    register: USER
+    ansible.builtin.debug:
+      msg: "USER IS {{USER}}"
+    when: rc = 1
      
