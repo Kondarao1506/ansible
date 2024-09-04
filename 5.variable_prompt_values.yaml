@@ -2,6 +2,7 @@
   hosts: web
   become: yes
   vars_prompt:
+  private: false
   - name: NAME
     prompt: "ENTER YOUR NAME"
   - name: WORK
