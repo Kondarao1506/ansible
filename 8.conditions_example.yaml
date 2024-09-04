@@ -1,5 +1,6 @@
 - name: check whether the given number is small or big
   hosts: local
+  connection: local
   vars_prompt:
     - name: num
       prompt: "Enter the number"
