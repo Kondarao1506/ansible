@@ -14,7 +14,7 @@
   - name: user add
     ansible.builtin.command: useradd expence
     register: USER
-    when: rc != 0
+    when: USER.rc != 0
     
     
      
