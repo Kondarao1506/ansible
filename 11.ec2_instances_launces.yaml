@@ -13,7 +13,7 @@
   tasks:
   - name: instances lanch
     amazon.aws.ec2_instance:
-      name: "{{item}}""
+      name: "{{item}}"
       vpc_subnet_id: "{{subnetid}}"
       instance_type: "t2.micro"
       security_group: "{{secgrpid}}"
