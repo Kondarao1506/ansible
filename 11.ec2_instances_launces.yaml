@@ -18,7 +18,7 @@
       instance_type: "t2.micro"
       security_group: "{{secgrpid}}"
       image_id: "{{amid}}"
-    loop: "{{instance}}"
+    loop: "{{instances}}"
     register: ec2-instances
 
   - name: print the ec2-instances data
