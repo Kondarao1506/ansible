@@ -1,9 +1,9 @@
 - name: "LAUNCE THE INSTANCES THROUGH ANCIBLE"
   hosts: local
   vars:
-    subnetid: subnet-0db7f96b56d8185f0
-    secgrpid: sg-0702ac86b9ebe68f7
-    amid: ami-09c813fb71547fc4f
+    subnetid: subnet-0074974b2221ebe41
+    secgrpid: sg-0702ac86b9ebe68f7 #sg-0702ac86b9ebe68f7
+    amid: ami-09c813fb71547fc4f #ami-09c813fb71547fc4f
     instances:
     - mysql
     - frontend
